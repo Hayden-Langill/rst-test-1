@@ -11,28 +11,27 @@ const image2 = document.getElementById('image2')
 image2.style.visibility = 'hidden'
 
 function add () {
-	if (timesClicked >= 50 && timesClicked < 300) { /*once you hit 50 you click for x2 the   amount */
-		timesClicked ++
-	} else if (timesClicked >= 300 && timesClicked < 1000) { //once you hit 300 you click for x4 the amount
-	  timesClicked ++
-	  timesClicked ++
-	  timesClicked ++
+	if (timesClicked >= 50 && timesClicked < 300) { /*  once you hit 50 you click for x2 the   amount */
+		timesClicked++
+	} else if (timesClicked >= 300 && timesClicked < 1000) { //  once you hit 300 you click for x4 the amount
+	  timesClicked++
+	  timesClicked++
+	  timesClicked++
 	} else if (timesClicked >= 1000) {
-		timesClicked ++
-	  timesClicked ++
-	  timesClicked ++
-		timesClicked ++
-	  timesClicked ++
+		timesClicked++
+	  timesClicked++
+	  timesClicked++
+		timesClicked++
+	  timesClicked++
 	}	
-	if (code.value == 'Summer' && timesClicked < 500) {
+	if (code.value === 'Summer' && timesClicked < 500) {
 		timesClicked = 500
 	}
-	
 	//base start without boost
-	timesClicked ++
+	timesClicked++
   document.getElementById('total').innerHTML = timesClicked;
 	if (timesClicked >= 0 && timesClicked <= 10) {
-		goal.innerHTML = 10 - timesClicked
+	  goal.innerHTML = 10 - timesClicked
 	} else if (timesClicked >= 10 && timesClicked <= 25) {
 		document.getElementById('body').style.backgroundColor = 'red'
 		goal.innerHTML = 25 - timesClicked
