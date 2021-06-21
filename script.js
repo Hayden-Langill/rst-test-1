@@ -47,7 +47,7 @@ function add () {
 		document.getElementById('body').style.backgroundColor = 'blue'
 	}
 	if (timesClicked === 10000) {
-		var audio = new Audio('Legends.webm') //	If player gets 10,000 clicks it plays this song
-audio.play()
-}
+		let audio = new Audio('Legends.webm') //	If player gets 10,000 clicks it plays this song
+    audio.play()
+  }
 }
