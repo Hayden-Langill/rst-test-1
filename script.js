@@ -29,7 +29,7 @@ function add () {
 	}
 	
 	//base start without boost
-	timesClicked ++;
+	timesClicked ++
   document.getElementById('total').innerHTML = timesClicked;
 	if (timesClicked >= 0 && timesClicked <= 10) {
 		goal.innerHTML = 10 - timesClicked
@@ -48,7 +48,7 @@ function add () {
 		document.getElementById('body').style.backgroundColor = 'blue'
 	}
 	if (timesClicked == 10000) {
-		var audio = new Audio('Legends.webm'); //If player gets 10,000 clicks it plays this song
-audio.play();
+		var audio = new Audio('Legends.webm') //If player gets 10,000 clicks it plays this song
+audio.play()
 	}
 }
