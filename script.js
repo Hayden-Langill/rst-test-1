@@ -12,17 +12,17 @@ image2.style.visibility = 'hidden'
 
 function add () {
 	if (timesClicked >= 50 && timesClicked < 300) { /*once you hit 50 you click for x2 the   amount */
-		timesClicked ++;
+		timesClicked ++
 	} else if (timesClicked >= 300 && timesClicked < 1000) { //once you hit 300 you click for x4 the amount
-	  timesClicked ++;
-	  timesClicked ++;
-	  timesClicked ++;
+	  timesClicked ++
+	  timesClicked ++
+	  timesClicked ++
 	} else if (timesClicked >= 1000) {
-		timesClicked ++;
-	  timesClicked ++;
-	  timesClicked ++;
-		timesClicked ++;
-	  timesClicked ++;
+		timesClicked ++
+	  timesClicked ++
+	  timesClicked ++
+		timesClicked ++
+	  timesClicked ++
 	}	
 	if (code.value == 'Summer' && timesClicked < 500) {
 		timesClicked = 500
