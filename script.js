@@ -27,7 +27,7 @@ function add () {
   if (code.value === 'Summer' && timesClicked < 500) {
     timesClicked = 500
   }
-	// base start without boost
+  // base start without boost
   timesClicked++
   document.getElementById('total').innerHTML = timesClicked
   if (timesClicked >= 0 && timesClicked <= 10) {
